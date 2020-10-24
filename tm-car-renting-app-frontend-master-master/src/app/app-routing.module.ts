@@ -8,15 +8,19 @@ import { AdminDashboardComponent } from './user/admin-dashboard/admin-dashboard.
 
 const routes: Routes = [
   { path: '', pathMatch: 'full', component: HomeComponent },
+
   { path: '', redirectTo: '/home', pathMatch: 'full' },
   {path:'booking-vehicle',component:BookVehicleComponent},
+
   {path:'home',component:HomeComponent},
+
   {path:'add-vehicle',component:AddVehicleComponent},
   {path:'admin-dashboard',component:AdminDashboardComponent},
 ];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
+  
   exports: [RouterModule]
   
 })

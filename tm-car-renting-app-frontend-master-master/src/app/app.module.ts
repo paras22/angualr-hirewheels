@@ -9,7 +9,6 @@ import { CoreModule } from './core/core.module';
 import { UserModule } from './user/user.module';
 import { BookingModule } from './booking/booking.module';
 import { HomeModule } from './home/home.module';
-import { HTTP_INTERCEPTORS } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -17,6 +16,7 @@ import { HTTP_INTERCEPTORS } from '@angular/common/http';
   ],
   imports: [
     BrowserModule,
+
     AppRoutingModule,
     BookingModule,
 
